@@ -1,0 +1,26 @@
+package com.programs;
+import java.util.*;
+public class OddElements {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		int ar [] = new int [n];
+		for(int i=0;i<ar.length;i++)
+		{
+			ar[i]=scan.nextInt();
+		}
+		oddelements(ar,n);
+	}
+	static void oddelements(int ar [],int n)
+	{
+		for(int i=0;i<ar.length;i++)
+		{
+			if(ar[i]%2!=0)
+			{
+				System.out.println(ar[i]+" ");
+			}
+		}
+	}
+
+}
